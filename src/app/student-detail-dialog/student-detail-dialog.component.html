@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>פרטי תלמיד</h1>
+<div mat-dialog-content class="dialogDetails">
+  שם פרטי: {{selectedUser.FirstName}}<br>
+  שם משפחה: {{selectedUser.LastName}}<br>
+  כתובת: {{selectedUser.Address}}<br>
+  טלפון בית: {{selectedUser.HomePhone}}<br>
+  טלפון נייד: {{selectedUser.CellPhone}}<br>
+  עיר: {{selectedUser.City}}<br>
+  דוא"ל: {{selectedUser.Email}}<br>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="CloseDialog()">סגור</button>
+</div>
